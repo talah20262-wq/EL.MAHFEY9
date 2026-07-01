@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorkHub Egypt - الصفحة الرئيسية</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="assets/logos/logo.png" alt="شعار الموقع" id="site-logo">
+                <span id="site-name">WorkHub Egypt</span>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="بحث...">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="jobs.html">الوظائف</a></li>
+                    <li><a href="companies.html">الشركات</a></li>
+                    <li><a href="workers.html">العمال</a></li>
+                    <li><a href="posts.html">المنشورات</a></li>
+                    <li><a href="pricing.html">الأسعار</a></li>
+                    <li><a href="contact.html">تواصل معنا</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn">تسجيل الدخول</a>
+                <a href="register.html" class="btn btn-primary">إنشاء حساب</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="news-ticker">
+        <marquee id="news-text">تم إضافة أكثر من 300 وظيفة جديدة اليوم.</marquee>
+    </div>
+
+    <main>
+        <section class="filters">
+            <h3>فلترة حسب:</h3>
+            <select id="governorate"><option>المحافظة</option></select>
+            <select id="city"><option>المدينة</option></select>
+            <select id="profession"><option>المهنة</option></select>
+            <input type="number" placeholder="الراتب">
+            <select id="experience"><option>الخبرة</option></select>
+            <input type="text" placeholder="الشركة">
+        </section>
+
+        <section class="jobs-list" id="jobs-container">
+            <!-- الوظائف سيتم تحميلها هنا -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 WorkHub Egypt. جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>
